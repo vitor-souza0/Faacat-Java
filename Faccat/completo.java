@@ -13,6 +13,7 @@ public class completo {
         System.out.println("1 - Exercício 1");
         System.out.println("2 - Exercício 2");
         System.out.println("3 - Exercìcio 3");
+        System.out.println("4 - Exercìcio 4");
         System.out.println("0 - Sair");
 
         System.out.print("Escolha um exercício: ");
@@ -30,6 +31,10 @@ public class completo {
 
             case 3:
                 exercicio3();
+                break;
+
+            case 4:
+                exercicio4();
                 break;
 
             case 0:
@@ -78,6 +83,26 @@ public class completo {
     }
 
     public static void exercicio4(){
+        Scanner Ex4 = new Scanner(System.in);
+        System.out.println("descubra sua idade em dias.");
+        System.out.println("Digite quantos anos você tem.");
+        byte anos = Ex4.nextByte();
+        System.out.println("Digite quantos meses se passaram deste seu ultimo anivesario.");
+        byte meses = Ex4.nextByte();
+        System.out.println("Digite quantos dias se passaram deste seu ultimo anivesario.");
+        short dias = Ex4.nextShort();
+        short idadeEmDias = (short) ((anos * 365) + (meses * 30) + dias);
+        System.out.println("Sua idade em dias é : " + idadeEmDias + " dias");
+
 
     }
+    public static void exercicio5(){
+        Scanner Ex5 = new Scanner(System.in);
+        System.out.println("Total eleitoral");
+        System.out.println("Digite o numero de total de eleitores:");
+        int totalEleitores = Ex5.nextInt();
+
+
+    }
+
 }
