@@ -15,6 +15,8 @@ public class completo {
         System.out.println("3 - Exercìcio 3");
         System.out.println("4 - Exercìcio 4");
         System.out.println("5 - Exercìcio 5");
+        System.out.println("6 - Exercìcio 6");
+        System.out.println("7 - Exercìcio 7");
         System.out.println("13 - Exercìcio 13");
         System.out.println("14 - Exercìcio 14");
         System.out.println("0 - Sair");
@@ -44,13 +46,47 @@ public class completo {
                 exercicio5();
                 break;
 
+            case 6:
+                exercicio6();
+                break;
+
+            case 7:
+                exercicio7();
+                break;
+
+            case 8:
+                exercicio8();
+                break;
+
+            case 9:
+                exercicio9();
+                break;
+
+            case 10:
+                exercicio10();
+                break;
+
+            case 11:
+                exercicio11();
+                break;
+
+            case 12:
+                exercicio12();
+                break;
+
             case 13:
                 exercicio13();
                 break;
+
             case 14:
                 exercicio14();
                 break;
-
+            case 15:
+                exercicio15();
+                break;
+            case 16:
+                exercicio16();
+                break;
 
             case 0:
                 System.out.println("Programa encerrado.");
@@ -111,6 +147,7 @@ public class completo {
 
 
     }
+
     public static void exercicio5(){
         Scanner Ex5 = new Scanner(System.in);
         System.out.println("Total eleitoral");
@@ -133,7 +170,55 @@ public class completo {
         System.out.println("Percentual de votos Nulo é :"+percentualNulo+"%");
     }
 
-    public static void exercicio13 (){
+    public static void exercicio6(){
+        Scanner Ex6 = new Scanner(System.in);
+        System.out.println("digite seu salário: ");
+        double salario = Ex6.nextDouble();
+        System.out.println("Digite o reajuste salarial atual: ");
+        double reajuste = Ex6.nextDouble();
+        double novoSalario = salario + (salario * reajuste /100);
+        System.out.println("Seu novo salário é de R$"+ novoSalario);
+    }
+
+    public static void exercicio7(){
+        Scanner Ex7 = new Scanner(System.in);
+        System.out.println("Descubra o custo final de um carro");
+        System.out.println("Lembrando que o distribuidor aumenta em o preço em 28% do valor de fabricação mais de 45% impostos");
+        System.out.println("Custo de fabrica: ");
+        double custoFabrica = Ex7.nextDouble();
+         double distribuidor = custoFabrica * 28 / 100;
+         double impostos = custoFabrica * 45/ 100;
+         double custoFinal = custoFabrica + distribuidor + impostos;
+        System.out.println("O custo final será de: R$ "+ custoFinal);
+    }
+
+    public static void exercicio8(){
+        Scanner Ex8 = new Scanner(System.in);
+        System.out.println("== Salario de um vendendor de carros ==");
+        System.out.println("Digite seu salário fixo: ");
+        double salarioFixo = Ex8.nextDouble();
+        System.out.println("Digite a quantidade de carros vendidos: ");
+        int quantidadeDeCarros = Ex8.nextInt();
+        System.out.println("Digite o valor totais das vendas do mes: ");
+        double valorTotalVendas = Ex8.nextDouble();
+        System.out.println("Digite a comisão por carro vendido: ");
+        double comisaoPorCarro = Ex8.nextDouble();
+        double comisaoCarro = quantidadeDeCarros * comisaoPorCarro;
+        double comisaoVenda = valorTotalVendas * 5 / 100;
+        double salarioFinal = salarioFixo + comisaoCarro + comisaoVenda;
+        System.out.println("o Salario desse vendedor deve ser de R$"+ salarioFinal);
+    }
+
+    public static void exercicio9(){
+        Scanner Ex9 = new Scanner(System.in);
+        System.out.println("Conversão de Celsius para Fahrenheit");
+        System.out.println("Digite seu temperatura em Celsius: ");
+        double temperatura = Ex9.nextDouble();
+        double farenheit = (temperatura * 1.8) + 32;
+        System.out.println("A tenperadura "+ temperatura+"ºC en farenheit è "+farenheit+"ºF");
+    }
+
+    public static void exercicio10 (){
         Scanner Ex13 = new Scanner(System.in);
         System.out.println("Saiba sua media escolar.");
         System.out.println("Digite a Primeira nota: ");
@@ -146,7 +231,8 @@ public class completo {
         System.out.println("As notas "+ primeiraNota + ","+segundaNota +" e "+terceiraNota+" tem a media de "+media);
 
     }
-    public static void exercicio14(){
+
+    public static void exercicio11(){
         Scanner Ex14 = new Scanner(System.in);
         System.out.println("verificador de numero maior ou menor que de 10");
         System.out.println("digite um numero para a verificação. Atenção apenas numeros inteiros");
@@ -160,5 +246,81 @@ public class completo {
             System.out.println("O numero é 10");
         } 
     }
+
+    public static void exercicio12() {
+        Scanner Ex12 = new Scanner(System.in);
+        System.out.println("descubra se um numero é positivo ou negativo");
+        System.out.println("Digite um numero inteiro");
+        int numeroDigitado = Ex12.nextInt();
+        if (numeroDigitado % 2 == 0) {
+            System.out.println("Esse numero é par");
+        } else {
+            System.out.println("Esse número é impar");
+        }
+    }
+
+    public static void exercicio13(){
+        Scanner Ex13 = new Scanner(System.in);
+        System.out.println("Descubra se o numero é positivo ou não");
+        System.out.println("Digite um numero inteiro");
+        int numeroDigitado = Ex13.nextInt();
+        if (numeroDigitado < 0){
+            System.out.println("Esse numero é negativo");
+        }else if (numeroDigitado >= 0 ){
+            System.out.println("esse numero é Positivo");
+        }
+    }
+
+    public static void exercicio14(){
+        Scanner Ex14 = new Scanner(System.in);
+        System.out.println("Calculo de uma Promoção");
+        System.out.println("Preço:\nMaça: R$1.20 \nPROMOÇÃO RELANPAGO \nNa compra de pelo menos 12 unidades desse produto cada undade custara 20% a menos");
+        System.out.println("digite a quantidade de maças que deseja comprar");
+        int quantidade = Ex14.nextInt();
+        if (quantidade >=12){
+            double preco = 1.0;
+            double soma = quantidade*preco;
+            System.out.println("o valor a ser pago será de R$"+soma);
+        }else{
+            double preco = 1.20;
+            double soma = quantidade*preco;
+            System.out.println("O valor a ser pago será de R$"+soma);
+        }
+    }
+
+    public static void exercicio15() {
+        Scanner Ex15 = new Scanner(System.in);
+        System.out.println("Digite a primeira nota :");
+        short primeiraNota = Ex15.nextShort();
+        System.out.println("Digite sua segunda nota");
+        short segundaNota = Ex15.nextShort();
+        int media = (primeiraNota+segundaNota)/2;
+        if (media < 6){
+            System.out.println("voce não foi aprovado, você teve a media de "+media);
+        }else{
+            System.out.println("voce foi aprovado coma media de "+media);
+        }
+
+    }
+    
+    public static void exercicio16() {
+        Scanner Ex16 = new Scanner(System.in);
+        System.out.println("saiba se podera votar");
+        System.out.println("Digite o ano atual");
+        int anoAtual = Ex16.nextInt();
+        System.out.println("Digite o ano de seu nascimento");
+        int anoNascimento = Ex16.nextInt();
+        int soma =  anoAtual-anoNascimento;
+        if (soma >= 18){
+            System.out.println("você poderá votar.");
+        } else if (soma >= 16 && soma < 18) {
+            System.out.println("voto Opcional");
+        }else{
+            System.out.println("não podera votar");
+        }
+    }
+
+
+
 
 }
