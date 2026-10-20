@@ -87,6 +87,15 @@ public class completo {
             case 16:
                 exercicio16();
                 break;
+            case 17:
+                exercicio17();
+                break;
+            case 18:
+                exercicio18();
+                break;
+            case 19:
+                exercicio19();
+                break;
 
             case 0:
                 System.out.println("Programa encerrado.");
@@ -112,15 +121,15 @@ public class completo {
     public static void exercicio2() {
         Scanner Ex2 = new Scanner(System.in);
         System.out.println("Digite um numero para saber o seu antecessor e sucessor.");
-         int numeroInteiro = Integer.parseInt(Ex2.next());
+        int numeroInteiro = Integer.parseInt(Ex2.next());
 
         int antecessor = numeroInteiro - 1;
         int sucessor = numeroInteiro + 1;
-        System.out.println("O antecessor do numero " + numeroInteiro + " é " + antecessor + " e seu sucessor é "+ sucessor);
+        System.out.println("O antecessor do numero " + numeroInteiro + " é " + antecessor + " e seu sucessor é " + sucessor);
         Ex2.close();
     }
 
-    public static void exercicio3(){
+    public static void exercicio3() {
         Scanner Ex3 = new Scanner(System.in);
         System.out.println("Descubra a área de um retangulo");
         System.out.println("Digite a base do seu retangulo");
@@ -128,12 +137,12 @@ public class completo {
         System.out.println("Agora digite a altura do retangulo");
         double numeroAltura = Double.parseDouble(Ex3.next());
         double Area = numeroBase * numeroAltura;
-        System.out.println("a area do do retangulo que com as informaçoes que você digitou é "+ Area +(" unidades"));
+        System.out.println("a area do do retangulo que com as informaçoes que você digitou é " + Area + (" unidades"));
 
 
     }
 
-    public static void exercicio4(){
+    public static void exercicio4() {
         Scanner Ex4 = new Scanner(System.in);
         System.out.println("descubra sua idade em dias.");
         System.out.println("Digite quantos anos você tem.");
@@ -148,7 +157,7 @@ public class completo {
 
     }
 
-    public static void exercicio5(){
+    public static void exercicio5() {
         Scanner Ex5 = new Scanner(System.in);
         System.out.println("Total eleitoral");
         System.out.println("Digite o numero de total de eleitores:");
@@ -160,39 +169,39 @@ public class completo {
         System.out.println("Digite o numero de votos Brancos");
         int totalBranco = Ex5.nextInt();
 
-        double percentualBranco = (double) (totalBranco * 100) /totalEleitores;
-        double percentualNulo = (double) (totalNulo * 100) /totalEleitores;
-        double percentualvalido = (double) (totalValido * 100) /totalEleitores;
+        double percentualBranco = (double) (totalBranco * 100) / totalEleitores;
+        double percentualNulo = (double) (totalNulo * 100) / totalEleitores;
+        double percentualvalido = (double) (totalValido * 100) / totalEleitores;
 
-        System.out.println("o total de eleitores é :"+totalEleitores);
-        System.out.println("Percentual de votos Valido é :"+percentualvalido+"%");
-        System.out.println("Percentual de votos Branco é :"+percentualBranco+"%");
-        System.out.println("Percentual de votos Nulo é :"+percentualNulo+"%");
+        System.out.println("o total de eleitores é :" + totalEleitores);
+        System.out.println("Percentual de votos Valido é :" + percentualvalido + "%");
+        System.out.println("Percentual de votos Branco é :" + percentualBranco + "%");
+        System.out.println("Percentual de votos Nulo é :" + percentualNulo + "%");
     }
 
-    public static void exercicio6(){
+    public static void exercicio6() {
         Scanner Ex6 = new Scanner(System.in);
         System.out.println("digite seu salário: ");
         double salario = Ex6.nextDouble();
         System.out.println("Digite o reajuste salarial atual: ");
         double reajuste = Ex6.nextDouble();
-        double novoSalario = salario + (salario * reajuste /100);
-        System.out.println("Seu novo salário é de R$"+ novoSalario);
+        double novoSalario = salario + (salario * reajuste / 100);
+        System.out.println("Seu novo salário é de R$" + novoSalario);
     }
 
-    public static void exercicio7(){
+    public static void exercicio7() {
         Scanner Ex7 = new Scanner(System.in);
         System.out.println("Descubra o custo final de um carro");
         System.out.println("Lembrando que o distribuidor aumenta em o preço em 28% do valor de fabricação mais de 45% impostos");
         System.out.println("Custo de fabrica: ");
         double custoFabrica = Ex7.nextDouble();
-         double distribuidor = custoFabrica * 28 / 100;
-         double impostos = custoFabrica * 45/ 100;
-         double custoFinal = custoFabrica + distribuidor + impostos;
-        System.out.println("O custo final será de: R$ "+ custoFinal);
+        double distribuidor = custoFabrica * 28 / 100;
+        double impostos = custoFabrica * 45 / 100;
+        double custoFinal = custoFabrica + distribuidor + impostos;
+        System.out.println("O custo final será de: R$ " + custoFinal);
     }
 
-    public static void exercicio8(){
+    public static void exercicio8() {
         Scanner Ex8 = new Scanner(System.in);
         System.out.println("== Salario de um vendendor de carros ==");
         System.out.println("Digite seu salário fixo: ");
@@ -206,19 +215,19 @@ public class completo {
         double comisaoCarro = quantidadeDeCarros * comisaoPorCarro;
         double comisaoVenda = valorTotalVendas * 5 / 100;
         double salarioFinal = salarioFixo + comisaoCarro + comisaoVenda;
-        System.out.println("o Salario desse vendedor deve ser de R$"+ salarioFinal);
+        System.out.println("o Salario desse vendedor deve ser de R$" + salarioFinal);
     }
 
-    public static void exercicio9(){
+    public static void exercicio9() {
         Scanner Ex9 = new Scanner(System.in);
         System.out.println("Conversão de Celsius para Fahrenheit");
         System.out.println("Digite seu temperatura em Celsius: ");
         double temperatura = Ex9.nextDouble();
         double farenheit = (temperatura * 1.8) + 32;
-        System.out.println("A tenperadura "+ temperatura+"ºC en farenheit è "+farenheit+"ºF");
+        System.out.println("A tenperadura " + temperatura + "ºC en farenheit è " + farenheit + "ºF");
     }
 
-    public static void exercicio10 (){
+    public static void exercicio10() {
         Scanner Ex13 = new Scanner(System.in);
         System.out.println("Saiba sua media escolar.");
         System.out.println("Digite a Primeira nota: ");
@@ -227,24 +236,24 @@ public class completo {
         double segundaNota = Ex13.nextDouble();
         System.out.println("Digite sua terceira nota");
         double terceiraNota = Ex13.nextDouble();
-        double media =(primeiraNota*2 + segundaNota*3 + terceiraNota*5) /10;
-        System.out.println("As notas "+ primeiraNota + ","+segundaNota +" e "+terceiraNota+" tem a media de "+media);
+        double media = (primeiraNota * 2 + segundaNota * 3 + terceiraNota * 5) / 10;
+        System.out.println("As notas " + primeiraNota + "," + segundaNota + " e " + terceiraNota + " tem a media de " + media);
 
     }
 
-    public static void exercicio11(){
+    public static void exercicio11() {
         Scanner Ex14 = new Scanner(System.in);
         System.out.println("verificador de numero maior ou menor que de 10");
         System.out.println("digite um numero para a verificação. Atenção apenas numeros inteiros");
         int numeroDigitado = Ex14.nextInt();
 
-        if(numeroDigitado > 10){
+        if (numeroDigitado > 10) {
             System.out.println("É maior que de 10");
-        }else if (numeroDigitado < 10) {
+        } else if (numeroDigitado < 10) {
             System.out.println("É menor que 10);");
-        }else if (numeroDigitado == 10) {
+        } else if (numeroDigitado == 10) {
             System.out.println("O numero é 10");
-        } 
+        }
     }
 
     public static void exercicio12() {
@@ -259,32 +268,32 @@ public class completo {
         }
     }
 
-    public static void exercicio13(){
+    public static void exercicio13() {
         Scanner Ex13 = new Scanner(System.in);
         System.out.println("Descubra se o numero é positivo ou não");
         System.out.println("Digite um numero inteiro");
         int numeroDigitado = Ex13.nextInt();
-        if (numeroDigitado < 0){
+        if (numeroDigitado < 0) {
             System.out.println("Esse numero é negativo");
-        }else if (numeroDigitado >= 0 ){
+        } else if (numeroDigitado >= 0) {
             System.out.println("esse numero é Positivo");
         }
     }
 
-    public static void exercicio14(){
+    public static void exercicio14() {
         Scanner Ex14 = new Scanner(System.in);
         System.out.println("Calculo de uma Promoção");
         System.out.println("Preço:\nMaça: R$1.20 \nPROMOÇÃO RELANPAGO \nNa compra de pelo menos 12 unidades desse produto cada undade custara 20% a menos");
         System.out.println("digite a quantidade de maças que deseja comprar");
         int quantidade = Ex14.nextInt();
-        if (quantidade >=12){
+        if (quantidade >= 12) {
             double preco = 1.0;
-            double soma = quantidade*preco;
-            System.out.println("o valor a ser pago será de R$"+soma);
-        }else{
+            double soma = quantidade * preco;
+            System.out.println("o valor a ser pago será de R$" + soma);
+        } else {
             double preco = 1.20;
-            double soma = quantidade*preco;
-            System.out.println("O valor a ser pago será de R$"+soma);
+            double soma = quantidade * preco;
+            System.out.println("O valor a ser pago será de R$" + soma);
         }
     }
 
@@ -294,15 +303,15 @@ public class completo {
         short primeiraNota = Ex15.nextShort();
         System.out.println("Digite sua segunda nota");
         short segundaNota = Ex15.nextShort();
-        int media = (primeiraNota+segundaNota)/2;
-        if (media < 6){
-            System.out.println("voce não foi aprovado, você teve a media de "+media);
-        }else{
-            System.out.println("voce foi aprovado coma media de "+media);
+        int media = (primeiraNota + segundaNota) / 2;
+        if (media < 6) {
+            System.out.println("voce não foi aprovado, você teve a media de " + media);
+        } else {
+            System.out.println("voce foi aprovado coma media de " + media);
         }
 
     }
-    
+
     public static void exercicio16() {
         Scanner Ex16 = new Scanner(System.in);
         System.out.println("saiba se podera votar");
@@ -310,17 +319,121 @@ public class completo {
         int anoAtual = Ex16.nextInt();
         System.out.println("Digite o ano de seu nascimento");
         int anoNascimento = Ex16.nextInt();
-        int soma =  anoAtual-anoNascimento;
-        if (soma >= 18){
+        int soma = anoAtual - anoNascimento;
+        if (soma >= 18) {
             System.out.println("você poderá votar.");
         } else if (soma >= 16 && soma < 18) {
             System.out.println("voto Opcional");
-        }else{
+        } else {
             System.out.println("não podera votar");
         }
     }
 
+    public static void exercicio17(){
+        Scanner ex17 = new Scanner(System.in);
+
+        System.out.println("Descubra qual numero é maior");
+        System.out.println("Digite o primeiro numero");
+        int numero1 = ex17.nextInt();
+        System.out.println("digite o segundo numero");
+        int numero2 = ex17.nextInt();
+
+        if (numero1 < numero2) {
+            System.out.println("o numero " + numero2 + " é maior que o numero " + numero1);
+        } else if (numero1 == numero2) {
+            System.out.println("os numeros são iguais");
+        } else {
+            System.out.println("o numero " + numero1 + " maior que o numero " + numero2);
+        }
+
+    }
+
+    public static void exercicio18(){
+        Scanner Ex18 = new Scanner(System.in);
+        System.out.println("Ordem cresente entre dois numeros, lembre-se de n~´ao");
+        System.out.println("Digite o primeiro numero");
+        int numero1 = Ex18.nextInt();
+        System.out.println("Digite o segundo numero");
+        int numero2 = Ex18.nextInt();
+        if (numero1 < numero2) {
+            System.out.printf("%d,%d", numero1, numero2);
+        } else {
+            System.out.printf("%d,%d", numero2, numero1);
+        }
+    }
+
+    public static void exercicio19(){
+        Scanner Ex19 = new Scanner(System.in);
+        System.out.println("Descubra a duraçao de uma partida de xadrez");
+        System.out.println("Leve em conta que meia-noite = 0");
+        System.out.println("Digite o horario de inicio da partida");
+        int inicio = Ex19.nextByte();
+        System.out.println("Digite o horário de termino da partida");
+        int fim = Ex19.nextByte();
+
+        if (inicio < fim) {
+            int tempo = inicio - fim;
+            System.out.println("O jogo durou " + tempo + " Horas");
+        } else {
+            int tempo = 24 + (fim - inicio);
+            System.out.println("O jogo durou " + tempo + " Horas");
+        }
+    }
+
+    public static void exercicio20(){
+        Scanner Ex20 = new Scanner(System.in);
+        /*A jornada de trabalho semanal de um funcionário é de 40 horas. O funcionário que trabalhar mais
+de 40 horas receberá hora extra, cujo cálculo é o valor da hora regular com um acréscimo de 50%.
+Escreva um algoritmo que leia o número de horas trabalhadas em um mês, o salário por hora e escreva
+o salário total do funcionário, que deverá ser acrescido das horas extras, caso tenham sido trabalhadas
+(considere que o mês possua 4 semanas exatas).*/
 
 
+    }
 
+    public static void exercicio21(){
+        Scanner Ex21 = new Scanner(System.in);
+        System.out.print("Digite seu nome: ");
+        String nome = Ex21.nextLine();
+        System.out.print("Digite sua altura em metros: ");
+        double altura = Ex21.nextDouble();
+        System.out.print("Digite seu sexo (M/F): ");
+        char sexo = Ex21.next().charAt(0);
+        double pesoIdeal;
+        if (sexo == 'M' || sexo == 'm') {
+            pesoIdeal = (72.7 * altura) - 58;
+        } else if (sexo == 'F' || sexo == 'f') {
+            pesoIdeal = (62.1 * altura) - 44.7;
+        } else {
+            System.out.println("Sexo inválido! Digite M ou F.");
+            return;
+        }
+        System.out.printf("""
+               Nome: %s
+               Sexo: %c
+               Altura: %f
+               Seu peso ideal: %f
+               """,nome,sexo,altura,pesoIdeal);
+    }
+
+    public static void exercicio22(){
+        Scanner Ex22 = new Scanner(System.in);
+        System.out.println("Digite o nome do Funcionario");
+        double salario =1500.00;
+        System.out.println("Digite o valor total das vendas do Funcionario");
+        int vendas = Ex22.nextInt();
+        if(vendas >= salario){
+            double comicao = vendas * 0.05;
+            double valorTotal = comicao + salario;
+            System.out.println("o salario desse Funcionario será de: R$" + valorTotal);
+        }else{
+            double comicao = vendas * 0.03;
+            double valorTotal = comicao + salario;
+            System.out.println("o salario desse Funcionario será de: R$" + valorTotal);
+        }
+    }
+
+    public static void exercicio23(){
+        Scanner Ex23 = new Scanner(System.in);
+    }
 }
